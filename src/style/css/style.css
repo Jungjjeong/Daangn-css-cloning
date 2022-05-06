@@ -8,10 +8,10 @@ h1,
 h2,
 h3,
 h4 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
   color: black;
   line-height: 1.2;
-  margin-bottom: 1.5rem;
-  margin-top: 0;
 }
 
 h1 {
