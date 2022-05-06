@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="daangn icon" href="./src/assets/web/logo.ico" />
+    <link rel="stylesheet" href="./src/style/css/style.css" />
+    <title>당신 근처의 당근마켓</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__inner">
+        <img src="./src/assets/web/logo-basic.svg" alt="daangn-logo" />
+        <div class="search">
+          <input
+            type="text"
+            name="header-search-input"
+            class="search__input"
+            placeholder="동네 이름, 물품명 등을 검색해보세요!"
+          />
+          <button class="search__button">
+            <img src="./src/assets/web/search-icon.svg" alt="daangn-search" />
+          </button>
+        </div>
+        <div class="buttons">
+          <div class="buttons-download">
+            <input
+              type="checkbox"
+              class="buttons-download__button"
+              id="toggle"
+            />
+            <ul class="download-list">
+              <li class="download-list__item">
+                <img
+                  src="./src/assets/web/apple-store.svg"
+                  alt="apple-store"
+                  class="download-list__img"
+                />
+                <span class="download-list__text bold-text">App store</span>
+              </li>
+              <li class="download-list__item">
+                <img
+                  src="./src/assets/web/google-play.svg"
+                  alt="google-play"
+                  class="download-list__img"
+                />
+                <span class="download-list__text bold-text">Google-play</span>
+              </li>
+            </ul>
+            <label for="toggle" class="bold-text">
+              다운로드 <span class="toggle-yes">﹀</span>
+              <span class="toggle-no">︿</span>
+            </label>
+          </div>
+          <div class="buttons-chat">
+            <button class="buttons-chat__button">
+              당근채팅<span class="buttons-chat__text--beta">Beta</span>
+            </button>
+          </div>
+        </div>
+        <div class="tablet-buttons">
+          <img
+            src="./src/assets/web/search-icon-orange.svg"
+            alt="daangn-search-orange"
+          />
+        </div>
+      </div>
+    </header>
+    <section class="home-main">
+      <div class="home-main__item background-beige">
+        <div class="item-box top--box">
+          <article class="item-box__text">
+            <h1>당신 근처의 <br />당근마켓</h1>
+            <p>중고 거래부터 동네 정보까지, 이웃과 함께해요.</p>
+            <p>가깝고 따뜻한 당신의 근처를 만들어요.</p>
+          </article>
+          <div class="item-box__img top--img">
+            <img
+              src="./src/assets/web/phono-image-1.png"
+              alt="phone-image-1"
+              class="desktop"
+            />
+            <img
+              src="./src/assets/mobile/phone_image_1.png"
+              alt="phone-image-1"
+              class="mobile"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="home-main__item">
+        <div class="item-box">
+          <div class="item-box__img">
+            <img src="./src/assets/web/phono-image-2.png" alt="phono-image-2" />
+          </div>
+          <div class="item-box__container">
+            <article class="item-box__text">
+              <h2>우리 동네<br />중고 직거래 마켓</h2>
+              <p>동네 주민들과 가깝고 따뜻한 거래를 지금 경험해보세요.</p>
+            </article>
+            <div class="item-box__button">
+              <button>인기매물 보기</button>
+              <button>믿을 수 있는 중고거래</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-main__item background-green">
+        <div class="item-box">
+          <div>
+            <article class="item-box__text">
+              <h2>이웃과 함께 하는<br />동네 생활</h2>
+              <p>우리 동네의 다양한 이야기를 이웃과 함께 나누어요.</p>
+            </article>
+            <div class="item-box__list">
+              <div class="item-box__item">
+                <img
+                  src="./src/assets/web/icon-story-1.svg"
+                  alt="icon-story-1"
+                />
+                <h3>우리동네질문</h3>
+                <p>궁금한 게 있을 땐 이웃<br />에게 물어보세요.</p>
+              </div>
+              <div class="item-box__item">
+                <img
+                  src="./src/assets/web/icon-story-2.svg"
+                  alt="icon-story-2"
+                />
+                <h3>동네분실센터</h3>
+                <p>무언가를 잃어버렸을 때,<br />함께 찾을 수 있어요.</p>
+              </div>
+              <div class="item-box__item">
+                <img
+                  src="./src/assets/web/icon-story-3.svg"
+                  alt="icon-story-3"
+                />
+                <h3>우리동네질문</h3>
+                <p>관심사가 비슷한 이웃과<br />온오프라인으로 만나요.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item-box__img">
+            <img src="./src/assets/web/phono-image-3.png" alt="phono-image-3" />
+          </div>
+        </div>
+      </div>
+      <div class="home-main__item">
+        <div class="item-box">
+          <div class="item-box__img">
+            <img src="./src/assets/web/phono-image-4.png" alt="phono-image-4" />
+          </div>
+          <div class="item-box__container">
+            <article class="item-box__text">
+              <h2>내 근처에서 찾는<br />동네가게</h2>
+              <p>우리 동네 가게를 찾고있나요?</p>
+              <p>동네 주민이 남긴 진짜 후기를 확인해보세요!</p>
+            </article>
+            <div class="item-box__button">
+              <button>당근마켓 동네가게 찾기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="home-popular background-gray">
+      <div class="home-popular__title">
+        <h2>중고거래 인기매물</h2>
+      </div>
+      <div class="home-popular__list">
+        <div class="popular-list">
+          <div class="popular-list__item">
+            <img
+              src="./src/assets/web/popular-sale-1.jpeg"
+              alt="popular-sale-1"
+              class="popular-list__img"
+            />
+            <p class="popular-list__title">티티카카 자전거</p>
+            <p class="bold-text">20,000원</p>
+            <div class="popular-list__description">
+              <p class="popular-list__description--address">
+                서울 노원구 하계동
+              </p>
+              <p class="popular-list__description--count">관심 10ㆍ채팅 35</p>
+            </div>
+          </div>
+          <div class="popular-list__item">
+            <img
+              src="./src/assets/web/popular-sale-2.jpeg"
+              alt="popular-sale-2"
+              class="popular-list__img"
+            />
+            <p class="popular-list__title">포켓몬빵 팔아요</p>
+            <p class="bold-text">2,000원</p>
+            <div class="popular-list__description">
+              <p class="popular-list__description--address">
+                광주 광산동 신가동
+              </p>
+              <p class="popular-list__description--count">관심 1ㆍ채팅 28</p>
+            </div>
+          </div>
+          <div class="popular-list__item">
+            <img
+              src="./src/assets/web/popular-sale-3.jpeg"
+              alt="popular-sale-3"
+              class="popular-list__img"
+            />
+            <p class="popular-list__title">필요하신분 가져가세요~</p>
+            <p class="bold-text">-</p>
+            <div class="popular-list__description">
+              <p class="popular-list__description--address">
+                전북 군산시 흥남동
+              </p>
+              <p class="popular-list__description--count">관심 4ㆍ채팅 27</p>
+            </div>
+          </div>
+          <div class="popular-list__item">
+            <img
+              src="./src/assets/web/popular-sale-4.jpeg"
+              alt="popular-sale-4"
+              class="popular-list__img"
+            />
+            <p class="popular-list__title">자전거</p>
+            <p class="bold-text">30,000원</p>
+            <div class="popular-list__description">
+              <p class="popular-list__description--address">
+                경기도 오산시 부산동
+              </p>
+              <p class="popular-list__description--count">관심 9ㆍ채팅 26</p>
+            </div>
+          </div>
+          <div class="popular-list__item">
+            <img
+              src="./src/assets/web/popular-sale-5.jpeg"
+              alt="popular-sale-5"
+              class="popular-list__img"
+            />
+            <p class="popular-list__title">냉장고 올립니다.</p>
+            <p class="bold-text">100,000원</p>
+            <div class="popular-list__description">
+              <p class="popular-list__description--address">부산 금정구 서동</p>
+              <p class="popular-list__description--count">관심 6ㆍ채팅 27</p>
+            </div>
+          </div>
+          <div class="popular-list__item">
+            <img
+              src="./src/assets/web/popular-sale-6.jpeg"
+              alt="popular-sale-6"
+              class="popular-list__img"
+            />
+            <p class="popular-list__title">컴팩트한 전자렌지에욤</p>
+            <p class="bold-text">15,000원</p>
+            <div class="popular-list__description">
+              <p class="popular-list__description--address">
+                부산 연제구 연산제1동
+              </p>
+              <p class="popular-list__description--count">관심 4ㆍ채팅 22</p>
+            </div>
+          </div>
+          <div class="popular-list__item">
+            <img
+              src="./src/assets/web/popular-sale-7.jpeg"
+              alt="popular-sale-7"
+              class="popular-list__img"
+            />
+            <p class="popular-list__title">제습기</p>
+            <p class="bold-text">40,000원</p>
+            <div class="popular-list__description">
+              <p class="popular-list__description--address">
+                인천 미추홀구 주안2동
+              </p>
+              <p class="popular-list__description--count">관심 8ㆍ채팅 24</p>
+            </div>
+          </div>
+          <div class="popular-list__item">
+            <img
+              src="./src/assets/web/popular-sale-8.jpeg"
+              alt="popular-sale-8"
+              class="popular-list__img"
+            />
+            <p class="popular-list__title">아시아 관리기 880 S</p>
+            <p class="bold-text">1,000,000원</p>
+            <div class="popular-list__description">
+              <p class="popular-list__description--address">
+                충남 보령시 동대동
+              </p>
+              <p class="popular-list__description--count">관심 11ㆍ채팅 22</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-popular__more bold-text">인기매물 더 보기</div>
+    </section>
+    <section class="home-search">
+      <div class="home-search__title bold-text">중고거래 인기검색어</div>
+      <ul class="home-search__list">
+        <li class="home-search__item">포켓몬빵</li>
+        <li class="home-search__item">자전거</li>
+        <li class="home-search__item">의자</li>
+        <li class="home-search__item">냉장고</li>
+        <li class="home-search__item">캠핑</li>
+        <li class="home-search__item">아이패드</li>
+        <li class="home-search__item">아이폰</li>
+        <li class="home-search__item">노트북</li>
+        <li class="home-search__item">알바</li>
+        <li class="home-search__item">오토바이</li>
+      </ul>
+    </section>
+    <footer class="footer background-dark-gray">
+      <nav class="footer-nav">
+        <div class="footer-nav__img">
+          <img src="./src/assets/web/logo-basic.svg" alt="logo-basic" />
+        </div>
+        <ul class="footer-nav__item">
+          <li class="bold-text white-text not-end">믿을 수 있는 중고거래</li>
+          <li class="bold-text white-text">자주 묻는 질문</li>
+        </ul>
+        <ul class="footer-nav__item">
+          <li class="bold-text white-text not-end">광고주센터</li>
+          <li class="not-end">당근페이</li>
+          <li>동네가게</li>
+        </ul>
+        <ul class="footer-nav__item">
+          <li class="not-end">회사 소개</li>
+          <li>채용</li>
+        </ul>
+        <ul class="footer-nav__item">
+          <li class="not-end">이용약관</li>
+          <li class="not-end">개인정보처리방침</li>
+          <li>위치기반서비스 이용약관</li>
+        </ul>
+      </nav>
+      <div class="footer-info">
+        <hr class="footer-info__line" />
+        <div class="footer-info__item">
+          <p>고객문의 <span>cs@daangnservice.com</span></p>
+          <p>제휴문의 <span>contact@daangn.com</span></p>
+        </div>
+        <div class="footer-info__item">
+          <p>지역광고 <span>ad@daangn.com</span></p>
+          <p>PR문의 <span>pr@daangn.com</span></p>
+        </div>
+        <div class="footer-info__item--description">
+          <p>서울특별시 구로구 디지털로 30길 28, 609호(당근서비스)</p>
+          <p>사업자 등록번호 : 375-87-00088</p>
+          <p>직업정보제공사업 신고번호 : J1200020200016</p>
+        </div>
+        <div class="footer-info__list">
+          <div class="info-list">
+            <img
+              src="./src/assets/web/icon-facebook.svg"
+              alt="icon-facebook"
+              class="info-list__item"
+            />
+            <img
+              src="./src/assets/web/icon-instagram.svg"
+              alt="icon-instagram"
+              class="info-list__item"
+            />
+            <img
+              src="./src/assets/web/icon-blog.svg"
+              alt="icon-blog"
+              class="info-list__item"
+            />
+            <div class="info-list__item--country">
+              <img src="./src/assets/web/icon-global.png" alt="icon-global" />
+              <span>한국</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-info__item--description">
+          <p>©Danggeun Market Inc.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

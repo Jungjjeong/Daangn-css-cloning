@@ -1,0 +1,122 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 0 2%;
+  background-color: $daangn-white;
+
+  .header__inner {
+    max-width: $box-width-1;
+    margin: 0 auto;
+    padding: 16px 0;
+    @include flex-center();
+
+    .search {
+      width: 400px;
+      margin-right: 200px;
+      padding: 6px 16px;
+      border: 1px solid $daangn-gray-2;
+      border-radius: 5px;
+      @include flex-center();
+
+      &:focus-within {
+        border: 1px solid black;
+      }
+
+      &__input {
+        width: 100%;
+        font-size: $type-size-2;
+
+        &::placeholder {
+          color: $daangn-gray-5;
+        }
+      }
+
+      @include media(tablet) {
+        display: none;
+      }
+    }
+
+    .buttons {
+      width: 250px;
+      @include flex-center();
+
+      &-download {
+        padding: 9px;
+        font-size: $type-size-2;
+
+        &__button {
+          display: none;
+
+          &:checked {
+            + ul {
+              display: block;
+              @include absolute-position($t: 70px);
+            }
+            ~ label {
+              .toggle-yes {
+                display: none;
+              }
+              .toggle-no {
+                display: inline;
+              }
+            }
+          }
+        }
+
+        .toggle-no {
+          display: none;
+        }
+      }
+
+      .download-list {
+        z-index: 2;
+        display: none;
+        padding: 10px 70px 10px 30px;
+        color: $daangn-dark-gray;
+        font-size: $type-size-3;
+        background-color: $daangn-gray;
+        border: 1px solid $daangn-dark-gray;
+        border-radius: 8px;
+
+        &__item {
+          margin: 20px 0;
+          vertical-align: text-top;
+        }
+
+        &__text {
+          margin-left: 8px;
+          vertical-align: top;
+        }
+      }
+
+      &-chat {
+        &__button {
+          padding: 10px;
+          font-size: $type-size-2;
+          border: 1px solid $daangn-gray-5;
+          border-radius: 5px;
+        }
+
+        &__text--beta {
+          padding-left: 2px;
+          color: $daangn-main-color;
+          font-size: $type-size-4;
+        }
+      }
+
+      @include media(tablet) {
+        display: none;
+      }
+    }
+
+    .tablet-buttons {
+      display: none;
+
+      @include media(tablet) {
+        display: block;
+      }
+    }
+  }
+}

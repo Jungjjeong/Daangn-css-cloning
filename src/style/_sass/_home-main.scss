@@ -1,0 +1,125 @@
+.home-main {
+  .background-beige {
+    background-color: $daangn-beige;
+  }
+  .background-green {
+    background-color: $daangn-green;
+  }
+
+  &__item {
+    width: 100%;
+    height: 780px;
+
+    .item-box {
+      position: relative;
+      gap: 20px;
+      max-width: $box-width-1;
+      height: 100%;
+      margin: 0 auto;
+      @include flex-center();
+
+      &__text {
+        padding: 30px 0;
+      }
+
+      &__button {
+        button {
+          margin-right: 10px;
+          padding: 15px 20px;
+          background-color: $daangn-gray-2;
+          border-radius: 4px;
+          &:hover {
+            background-color: $daangn-gray-6;
+          }
+        }
+
+        @include media(tablet) {
+          @include flex-compact();
+          flex-direction: column;
+
+          button {
+            width: 200px;
+            margin: 5px;
+          }
+        }
+      }
+
+      &__img {
+        img {
+          max-width: 532px;
+          max-height: 80%;
+
+          @include media(tablet) {
+            max-width: 80%;
+          }
+        }
+      }
+
+      &__list {
+        @include flex-center();
+
+        p {
+          font-size: $type-size-4;
+        }
+
+        @include media(tablet) {
+          display: none;
+        }
+      }
+
+      &__item {
+        padding: 30px 10px;
+
+        h3 {
+          padding-top: 5px;
+        }
+      }
+
+      @include media(tablet) {
+        flex-direction: column;
+        justify-items: center;
+        height: fit-content;
+        text-align: center;
+      }
+
+      &__container {
+        @include media(tablet) {
+          order: -1;
+        }
+      }
+    }
+
+    .top {
+      &--img {
+        align-self: flex-end;
+
+        .desktop {
+          width: 100%;
+          @include absolute-position($r: -5% ,$b: 0);
+          max-width: 800px;
+        }
+
+        .mobile {
+          display: none;
+        }
+
+        @include media(tablet) {
+          align-self: center;
+
+          .desktop {
+            display: none;
+          }
+          .mobile {
+            display: block;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+    @include media(tablet) {
+      height: fit-content;
+      padding-top: 50px;
+    }
+  }
+}

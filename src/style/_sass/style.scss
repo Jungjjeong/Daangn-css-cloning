@@ -1,0 +1,23 @@
+/* ====== Ects ====== */
+@import './variables';
+@import './mixins';
+@import './print';
+
+/* ====== Commons ====== */
+@import './common';
+
+
+/* ====== Components ====== */
+@import './header';
+@import './home-main';
+@import './home-popular';
+@import './home-search';
+@import './footer';
+
+.bold-text {
+  font-weight: bold;
+}
+
+.white-text {
+  color: white;
+}

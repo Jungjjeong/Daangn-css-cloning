@@ -1,0 +1,38 @@
+@use 'sass:map';
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-align-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+@mixin flex-compact {
+  display: flex;
+  align-items: center;
+}
+
+@mixin absolute-position($t: null, $r: null, $b: null, $l: null) {
+  position: absolute;
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
+}
+
+
+@mixin media($name) {
+  $breakpoints: (
+    phone: 576px,
+    tablet: 992px,
+    desktop: 1200px,
+  );
+  @media all and (max-width: map-get($breakpoints, $name)) {
+    @content;
+  }
+}

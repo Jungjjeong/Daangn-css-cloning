@@ -1,0 +1,19 @@
+.home-search {
+  padding: 50px;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+
+  &__list {
+    max-width: $box-width-2;
+    margin: 0 auto;
+  }
+
+  &__item {
+    display: inline-block;
+    margin: 5px 1.2em;
+  }
+}
