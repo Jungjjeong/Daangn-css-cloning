@@ -76,8 +76,11 @@
         @include flex-compact();
         padding: 15px 0;
         color: $daangn-gray-3;
-        font-size: $type-size-4;
-		
+
+        p {
+          font-size: $type-size-4;
+        }
+
         @include media(tablet) {
           display: block;
         }

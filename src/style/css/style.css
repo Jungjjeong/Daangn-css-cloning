@@ -606,6 +606,9 @@ header .header__inner .tablet-buttons {
           align-items: center;
   padding: 15px 0;
   color: #82868a;
+}
+
+.footer-info__item--description p {
   font-size: 0.8rem;
 }
 
